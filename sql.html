@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SQL Documentation" />
+    <meta name="keywords" content="Sql,MySQL, query" />
+    <meta name="author" content="Mohamed Ali Naaoui" />
+    <link rel="stylesheet" href="sql.css" />
+    <title>MySQL</title>
+  </head>
+  <body>
+    <!-- 
+You can see a main element with a corresponding id="main-doc", which contains 
+the page's main content (technical documentation)
+
+Within the #main-doc element, you can see several section elements, each with a class of main-section.
+There should be a minimum of five
+
+The first element within each .main-section should be a header element, 
+which contains text that describes the topic of that section. 
+-->
+    <main id="main-doc">
+      <div class="content">
+        <section class="main-section" id="Introduction_to_MySQL">
+          <header><h1>Introduction to MySQL</h1></header>
+          <p class="discription">
+            MySQL is a very popular open-source relational database management
+            system (RDBMS).
+          </p>
+          <h3>What is MySQL?</h3>
+          <ul>
+            <li>MySQL is a relational database management system</li>
+            <li>MySQL is open-source</li>
+            <li>MySQL is free</li>
+            <li>MySQL is ideal for both small and large applications</li>
+            <li>MySQL is very fast, reliable, scalable, and easy to use</li>
+            <li>MySQL is cross-platform</li>
+            <li>MySQL is compliant with the ANSI SQL standard</li>
+            <li>MySQL was first released in 1995</li>
+            <li>
+              MySQL is developed, distributed, and supported by Oracle
+              Corporation
+            </li>
+            <li>
+              MySQL is named after co-founder Monty Widenius's daughter: My
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-section" id="What_is_SQL">
+          <header>What is SQL?</header>
+          <div class="discription">
+            <p>
+              SQL is the standard language for dealing with Relational
+              Databases.
+            </p>
+            <p>
+              SQL is used to insert, search, update, and delete database
+              records.
+            </p>
+          </div>
+          <h3>How to Use SQL</h3>
+          <p>
+            The following SQL statement selects all the records in the
+            "Customers" table:
+          </p>
+          <code> SELECT * FROM Customers; </code>
+        </section>
+
+        <section class="main-section" id="The_MySQL_SELECT_Statement">
+          <header>The MySQL SELECT Statement</header>
+          <div class="discription">
+            <p>
+              The <span>SELECT</span> statement is used to select data from a
+              database.
+            </p>
+            <p>
+              The data returned is stored in a result table, called the
+              result-set.
+            </p>
+          </div>
+          <h3>SELECT Syntax</h3>
+          <code> SELECT column1, column2, ... FROM table_name; </code>
+          <p>
+            Here, column1, column2, ... are the field names of the table you
+            want to select data from. If you want to select all the fields
+            available in the table, use the following syntax:
+          </p>
+          <code> SELECT * FROM table_name; </code>
+        </section>
+
+        <section class="main-section" id="The_MySQL_WHERE_Clause">
+          <header>The MySQL WHERE Clause</header>
+          <div class="discription">
+            <p>The <span>WHERE</span> clause is used to filter records.</p>
+            <p>
+              It is used to extract only those records that fulfill a specified
+              condition.
+            </p>
+          </div>
+          <h3>WHERE Syntax</h3>
+          <code>
+            SELECT column1, column2, ... FROM table_name WHERE condition;
+          </code>
+          <p class="Note">
+            <strong>Note</strong>: The WHERE clause is not only used in SELECT
+            statements, it is also used in UPDATE, DELETE, etc.!
+          </p>
+        </section>
+
+        <section class="main-section" id="AND_OR_NOT_Operators">
+          <header>The MySQL AND, OR and NOT Operators</header>
+          <div class="discription">
+            <p>
+              The <span>WHERE</span> clause can be combined with
+              <span>AND</span>, <span>OR</span>, and <span>NOT</span> operators.
+            </p>
+            <p>
+              The <span>AND</span> and <span>OR</span> operators are used to
+              filter records based on more than one condition:
+            </p>
+            <ul>
+              <li>
+                The <span>AND</span> operator displays a record if all the
+                conditions separated by <span>AND</span> are TRUE.
+              </li>
+              <li>
+                The <span>OR</span> operator displays a record if any of the
+                conditions separated by OR is TRUE.
+              </li>
+            </ul>
+            <p>
+              The <span>NOT</span> operator displays a record if the
+              condition(s) is NOT TRUE.
+            </p>
+          </div>
+          <h3>AND Syntax</h3>
+          <code>
+            SELECT column1, column2, ... FROM table_name WHERE condition1 AND
+            condition2 AND condition3 ...;
+          </code>
+
+          <h3>OR Syntax</h3>
+          <code>
+            SELECT column1, column2, ... FROM table_name WHERE condition1 OR
+            condition2 OR condition3 ...;
+          </code>
+
+          <h3>NOT Syntax</h3>
+          <code>
+            SELECT column1, column2, ... FROM table_name WHERE NOT condition;
+          </code>
+        </section>
+      </div>
+      <aside>
+        <nav id="navbar">
+          <header><h3>SQL Documentation</h3></header>
+          <a href="#Introduction_to_MySQL" class="nav-link"
+            >Introduction to MySQL</a
+          >
+          <a href="#What_is_SQL" class="nav-link">What is SQL?</a>
+          <a href="#The_MySQL_SELECT_Statement" class="nav-link"
+            >The MySQL SELECT Statement</a
+          >
+          <a href="#The_MySQL_WHERE_Clause" class="nav-link"
+            >The MySQL WHERE Clause</a
+          >
+          <a href="#AND_OR_NOT_Operators" class="nav-link"
+            >The MySQL AND, OR and NOT Operators</a
+          >
+        </nav>
+      </aside>
+    </main>
+  </body>
+</html>
